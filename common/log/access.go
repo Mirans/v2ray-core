@@ -3,7 +3,7 @@ package log
 import (
 	"strings"
 
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 type AccessStatus string

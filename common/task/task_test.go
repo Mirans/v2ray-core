@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	. "github.com/v2ray/v2ray-core/core/common/task"
+	"github.com/v2ray/v2ray-core/common"
+	. "github.com/v2ray/v2ray-core/common/task"
 )
 
 func TestExecuteParallel(t *testing.T) {

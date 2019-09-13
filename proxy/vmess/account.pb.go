@@ -3,7 +3,7 @@ package vmess
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
 	math "math"
 )
 
@@ -81,7 +81,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/vmess/account.proto", fileDescriptor_d65dee31e5abbda0)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/proxy/vmess/account.proto", fileDescriptor_d65dee31e5abbda0)
 }
 
 var fileDescriptor_d65dee31e5abbda0 = []byte{

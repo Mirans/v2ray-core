@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	_ "github.com/v2ray/v2ray-core/core/infra/conf/command"
-	"github.com/v2ray/v2ray-core/core/infra/control"
+	_ "github.com/v2ray/v2ray-core/infra/conf/command"
+	"github.com/v2ray/v2ray-core/infra/control"
 )
 
 func getCommandName() string {

@@ -3,7 +3,7 @@ package protocol
 import (
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common/dice"
+	"github.com/v2ray/v2ray-core/common/dice"
 )
 
 type Timestamp int64

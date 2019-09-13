@@ -6,7 +6,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/common/buf"
 )
 
 type SendingWindow struct {

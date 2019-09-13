@@ -3,8 +3,8 @@ package control
 import (
 	"fmt"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/uuid"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/uuid"
 )
 
 type UUIDCommand struct{}

@@ -376,7 +376,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/headers/http/config.proto", fileDescriptor_e2685d0b4b039e80)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/transport/internet/headers/http/config.proto", fileDescriptor_e2685d0b4b039e80)
 }
 
 var fileDescriptor_e2685d0b4b039e80 = []byte{

@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	. "github.com/v2ray/v2ray-core/core/transport/internet/headers/srtp"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	. "github.com/v2ray/v2ray-core/transport/internet/headers/srtp"
 )
 
 func TestSRTPWrite(t *testing.T) {

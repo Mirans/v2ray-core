@@ -1,7 +1,7 @@
 package dokodemo
 
 import (
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 // GetPredefinedAddress returns the defined address from proto config. Null if address is not valid.

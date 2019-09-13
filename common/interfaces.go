@@ -1,6 +1,6 @@
 package common
 
-import "github.com/v2ray/v2ray-core/core/common/errors"
+import "github.com/v2ray/v2ray-core/common/errors"
 
 // Closable is the interface for objects that can release its resources.
 //

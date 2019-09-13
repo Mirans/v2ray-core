@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	. "github.com/v2ray/v2ray-core/core/app/stats"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/features/stats"
+	. "github.com/v2ray/v2ray-core/app/stats"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/features/stats"
 )
 
 func TestInternface(t *testing.T) {

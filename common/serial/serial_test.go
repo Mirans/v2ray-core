@@ -6,9 +6,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 func TestUint16Serial(t *testing.T) {

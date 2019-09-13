@@ -6,8 +6,8 @@ option go_package = "dokodemo";
 option java_package = "com.v2ray.core.proxy.dokodemo";
 option java_multiple_files = true;
 
-import "github.com/v2ray/v2ray-core/core/common/net/address.proto";
-import "github.com/v2ray/v2ray-core/core/common/net/network.proto";
+import "github.com/v2ray/v2ray-core/common/net/address.proto";
+import "github.com/v2ray/v2ray-core/common/net/network.proto";
 
 message Config {
   v2ray.core.common.net.IPOrDomain address = 1;

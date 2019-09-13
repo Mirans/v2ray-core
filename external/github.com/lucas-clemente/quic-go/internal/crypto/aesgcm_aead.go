@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
 )
 
 type aeadAESGCM struct {

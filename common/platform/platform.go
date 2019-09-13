@@ -1,4 +1,4 @@
-package platform // import "github.com/v2ray/v2ray-core/core/common/platform"
+package platform // import "github.com/v2ray/v2ray-core/common/platform"
 
 import (
 	"os"

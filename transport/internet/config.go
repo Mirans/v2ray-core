@@ -1,8 +1,8 @@
 package internet
 
 import (
-	"github.com/v2ray/v2ray-core/core/common/serial"
-	"github.com/v2ray/v2ray-core/core/features"
+	"github.com/v2ray/v2ray-core/common/serial"
+	"github.com/v2ray/v2ray-core/features"
 )
 
 type ConfigCreator func() interface{}

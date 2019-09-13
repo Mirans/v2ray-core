@@ -3,17 +3,17 @@ package outbound
 import (
 	"context"
 
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/app/proxyman"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/mux"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/session"
-	"github.com/v2ray/v2ray-core/core/features/outbound"
-	"github.com/v2ray/v2ray-core/core/proxy"
-	"github.com/v2ray/v2ray-core/core/transport"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
-	"github.com/v2ray/v2ray-core/core/transport/pipe"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/app/proxyman"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/mux"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/session"
+	"github.com/v2ray/v2ray-core/features/outbound"
+	"github.com/v2ray/v2ray-core/proxy"
+	"github.com/v2ray/v2ray-core/transport"
+	"github.com/v2ray/v2ray-core/transport/internet"
+	"github.com/v2ray/v2ray-core/transport/pipe"
 )
 
 // Handler is an implements of outbound.Handler.

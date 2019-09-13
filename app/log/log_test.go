@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/v2ray/v2ray-core/core/app/log"
-	"github.com/v2ray/v2ray-core/core/common"
-	clog "github.com/v2ray/v2ray-core/core/common/log"
-	"github.com/v2ray/v2ray-core/core/testing/mocks"
+	"github.com/v2ray/v2ray-core/app/log"
+	"github.com/v2ray/v2ray-core/common"
+	clog "github.com/v2ray/v2ray-core/common/log"
+	"github.com/v2ray/v2ray-core/testing/mocks"
 )
 
 func TestCustomLogHandler(t *testing.T) {

@@ -1,6 +1,6 @@
 package task
 
-import "github.com/v2ray/v2ray-core/core/common"
+import "github.com/v2ray/v2ray-core/common"
 
 // Close returns a func() that closes v.
 func Close(v interface{}) func() error {

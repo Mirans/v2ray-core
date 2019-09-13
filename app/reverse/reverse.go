@@ -7,12 +7,12 @@ package reverse
 import (
 	"context"
 
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/features/outbound"
-	"github.com/v2ray/v2ray-core/core/features/routing"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/features/outbound"
+	"github.com/v2ray/v2ray-core/features/routing"
 )
 
 const (

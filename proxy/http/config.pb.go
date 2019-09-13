@@ -3,7 +3,7 @@ package http
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
 	math "math"
 )
 
@@ -179,7 +179,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/http/config.proto", fileDescriptor_e66c3db3a635d8e4)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/proxy/http/config.proto", fileDescriptor_e66c3db3a635d8e4)
 }
 
 var fileDescriptor_e66c3db3a635d8e4 = []byte{

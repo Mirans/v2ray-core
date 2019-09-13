@@ -8,15 +8,15 @@ import (
 
 	proto "github.com/golang/protobuf/proto"
 
-	. "github.com/v2ray/v2ray-core/core/app/router"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/platform"
-	"github.com/v2ray/v2ray-core/core/common/platform/filesystem"
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	"github.com/v2ray/v2ray-core/core/common/protocol/http"
-	"github.com/v2ray/v2ray-core/core/common/session"
+	. "github.com/v2ray/v2ray-core/app/router"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/platform"
+	"github.com/v2ray/v2ray-core/common/platform/filesystem"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	"github.com/v2ray/v2ray-core/common/protocol/http"
+	"github.com/v2ray/v2ray-core/common/session"
 )
 
 func init() {

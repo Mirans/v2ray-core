@@ -5,17 +5,17 @@ import (
 	"strings"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/v2ray/v2ray-core/core/common/platform/filesystem"
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	"github.com/v2ray/v2ray-core/core/common/serial"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
-	"github.com/v2ray/v2ray-core/core/transport/internet/domainsocket"
-	"github.com/v2ray/v2ray-core/core/transport/internet/http"
-	"github.com/v2ray/v2ray-core/core/transport/internet/kcp"
-	"github.com/v2ray/v2ray-core/core/transport/internet/quic"
-	"github.com/v2ray/v2ray-core/core/transport/internet/tcp"
-	"github.com/v2ray/v2ray-core/core/transport/internet/tls"
-	"github.com/v2ray/v2ray-core/core/transport/internet/websocket"
+	"github.com/v2ray/v2ray-core/common/platform/filesystem"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	"github.com/v2ray/v2ray-core/common/serial"
+	"github.com/v2ray/v2ray-core/transport/internet"
+	"github.com/v2ray/v2ray-core/transport/internet/domainsocket"
+	"github.com/v2ray/v2ray-core/transport/internet/http"
+	"github.com/v2ray/v2ray-core/transport/internet/kcp"
+	"github.com/v2ray/v2ray-core/transport/internet/quic"
+	"github.com/v2ray/v2ray-core/transport/internet/tcp"
+	"github.com/v2ray/v2ray-core/transport/internet/tls"
+	"github.com/v2ray/v2ray-core/transport/internet/websocket"
 )
 
 var (

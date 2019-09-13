@@ -8,14 +8,14 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/protocol/tls/cert"
-	"github.com/v2ray/v2ray-core/core/testing/servers/tcp"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
-	. "github.com/v2ray/v2ray-core/core/transport/internet/http"
-	"github.com/v2ray/v2ray-core/core/transport/internet/tls"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/protocol/tls/cert"
+	"github.com/v2ray/v2ray-core/testing/servers/tcp"
+	"github.com/v2ray/v2ray-core/transport/internet"
+	. "github.com/v2ray/v2ray-core/transport/internet/http"
+	"github.com/v2ray/v2ray-core/transport/internet/tls"
 )
 
 func TestHTTPConnection(t *testing.T) {

@@ -3,7 +3,7 @@ package strmatcher_test
 import (
 	"testing"
 
-	. "github.com/v2ray/v2ray-core/core/common/strmatcher"
+	. "github.com/v2ray/v2ray-core/common/strmatcher"
 )
 
 func TestFullMatcherGroup(t *testing.T) {

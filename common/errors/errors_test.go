@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/log"
+	. "github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/log"
 )
 
 func TestError(t *testing.T) {
@@ -46,11 +46,11 @@ func TestErrorMessage(t *testing.T) {
 	}{
 		{
 			err: New("a").Base(New("b")).WithPathObj(e{}),
-			msg: "github.com/v2ray/v2ray-core/core/common/errors_test: a > b",
+			msg: "github.com/v2ray/v2ray-core/common/errors_test: a > b",
 		},
 		{
 			err: New("a").Base(New("b").WithPathObj(e{})),
-			msg: "a > github.com/v2ray/v2ray-core/core/common/errors_test: b",
+			msg: "a > github.com/v2ray/v2ray-core/common/errors_test: b",
 		},
 	}
 

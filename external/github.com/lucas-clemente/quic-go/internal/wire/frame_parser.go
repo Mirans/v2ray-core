@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/qerr"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/qerr"
 )
 
 // ParseNextFrame parses the next frame

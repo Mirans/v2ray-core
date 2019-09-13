@@ -3,8 +3,8 @@ package routing
 import (
 	"context"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/features"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/features"
 )
 
 // Router is a feature to choose an outbound tag for the given request.

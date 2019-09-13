@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"crypto/rand"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/utils"
 )
 
 // ComposeVersionNegotiation composes a Version Negotiation

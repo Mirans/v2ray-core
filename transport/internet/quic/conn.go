@@ -8,11 +8,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	quic "github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/net"
+	quic "github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go"
+	"github.com/v2ray/v2ray-core/transport/internet"
 )
 
 type sysConn struct {

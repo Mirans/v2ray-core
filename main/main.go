@@ -12,10 +12,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/common/platform"
-	"github.com/v2ray/v2ray-core/core/main/confloader"
-	_ "github.com/v2ray/v2ray-core/core/main/distro/all"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/common/platform"
+	"github.com/v2ray/v2ray-core/main/confloader"
+	_ "github.com/v2ray/v2ray-core/main/distro/all"
 )
 
 var (

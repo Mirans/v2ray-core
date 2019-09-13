@@ -3,10 +3,10 @@
 package dispatcher
 
 import (
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/protocol/bittorrent"
-	"github.com/v2ray/v2ray-core/core/common/protocol/http"
-	"github.com/v2ray/v2ray-core/core/common/protocol/tls"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/protocol/bittorrent"
+	"github.com/v2ray/v2ray-core/common/protocol/http"
+	"github.com/v2ray/v2ray-core/common/protocol/tls"
 )
 
 type SniffResult interface {

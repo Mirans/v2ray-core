@@ -8,8 +8,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/log"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/log"
 )
 
 // Instance is a log.Handler that handles logs.

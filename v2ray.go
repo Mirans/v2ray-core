@@ -7,16 +7,16 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/serial"
-	"github.com/v2ray/v2ray-core/core/features"
-	"github.com/v2ray/v2ray-core/core/features/dns"
-	"github.com/v2ray/v2ray-core/core/features/dns/localdns"
-	"github.com/v2ray/v2ray-core/core/features/inbound"
-	"github.com/v2ray/v2ray-core/core/features/outbound"
-	"github.com/v2ray/v2ray-core/core/features/policy"
-	"github.com/v2ray/v2ray-core/core/features/routing"
-	"github.com/v2ray/v2ray-core/core/features/stats"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/serial"
+	"github.com/v2ray/v2ray-core/features"
+	"github.com/v2ray/v2ray-core/features/dns"
+	"github.com/v2ray/v2ray-core/features/dns/localdns"
+	"github.com/v2ray/v2ray-core/features/inbound"
+	"github.com/v2ray/v2ray-core/features/outbound"
+	"github.com/v2ray/v2ray-core/features/policy"
+	"github.com/v2ray/v2ray-core/features/routing"
+	"github.com/v2ray/v2ray-core/features/stats"
 )
 
 // Server is an instance of V2Ray. At any time, there must be at most one Server instance running.

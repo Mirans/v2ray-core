@@ -5,10 +5,10 @@ package tls
 import (
 	"crypto/tls"
 
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/net"
 
-	utls "github.com/v2ray/v2ray-core/core/external/github.com/refraction-networking/utls"
+	utls "github.com/v2ray/v2ray-core/external/github.com/refraction-networking/utls"
 )
 
 //go:generate errorgen

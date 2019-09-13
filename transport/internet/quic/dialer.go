@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/task"
-	quic "github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
-	"github.com/v2ray/v2ray-core/core/transport/internet/tls"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/task"
+	quic "github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go"
+	"github.com/v2ray/v2ray-core/transport/internet"
+	"github.com/v2ray/v2ray-core/transport/internet/tls"
 )
 
 type sessionContext struct {

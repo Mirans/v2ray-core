@@ -3,7 +3,7 @@ package pubsub_test
 import (
 	"testing"
 
-	. "github.com/v2ray/v2ray-core/core/common/signal/pubsub"
+	. "github.com/v2ray/v2ray-core/common/signal/pubsub"
 )
 
 func TestPubsub(t *testing.T) {

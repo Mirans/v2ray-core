@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/congestion"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/congestion"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/utils"
 )
 
 type baseFlowController struct {

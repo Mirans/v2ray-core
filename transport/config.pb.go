@@ -3,7 +3,7 @@ package transport
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	internet "github.com/v2ray/v2ray-core/core/transport/internet"
+	internet "github.com/v2ray/v2ray-core/transport/internet"
 	math "math"
 )
 
@@ -64,7 +64,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/config.proto", fileDescriptor_e34c3c5557a3c999)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/transport/config.proto", fileDescriptor_e34c3c5557a3c999)
 }
 
 var fileDescriptor_e34c3c5557a3c999 = []byte{

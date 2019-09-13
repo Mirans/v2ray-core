@@ -3,8 +3,8 @@ package quic
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
-	serial "github.com/v2ray/v2ray-core/core/common/serial"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
+	serial "github.com/v2ray/v2ray-core/common/serial"
 	math "math"
 )
 
@@ -79,7 +79,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/quic/config.proto", fileDescriptor_462e2eb906061b36)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/transport/internet/quic/config.proto", fileDescriptor_462e2eb906061b36)
 }
 
 var fileDescriptor_462e2eb906061b36 = []byte{

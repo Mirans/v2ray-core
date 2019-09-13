@@ -6,7 +6,7 @@ option go_package = "dns";
 option java_package = "com.v2ray.core.proxy.dns";
 option java_multiple_files = true;
 
-import "github.com/v2ray/v2ray-core/core/common/net/destination.proto";
+import "github.com/v2ray/v2ray-core/common/net/destination.proto";
 
 message Config {
   // Server is the DNS server address. If specified, this address overrides the original one.

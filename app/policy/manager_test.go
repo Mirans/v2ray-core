@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/v2ray/v2ray-core/core/app/policy"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/features/policy"
+	. "github.com/v2ray/v2ray-core/app/policy"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/features/policy"
 )
 
 func TestPolicy(t *testing.T) {

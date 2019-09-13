@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"github.com/v2ray/v2ray-core/core/app/policy"
+	"github.com/v2ray/v2ray-core/app/policy"
 )
 
 type Policy struct {

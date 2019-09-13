@@ -6,11 +6,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	"github.com/v2ray/v2ray-core/core/common/serial"
-	"github.com/v2ray/v2ray-core/core/proxy/vmess"
-	"github.com/v2ray/v2ray-core/core/proxy/vmess/inbound"
-	"github.com/v2ray/v2ray-core/core/proxy/vmess/outbound"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	"github.com/v2ray/v2ray-core/common/serial"
+	"github.com/v2ray/v2ray-core/proxy/vmess"
+	"github.com/v2ray/v2ray-core/proxy/vmess/inbound"
+	"github.com/v2ray/v2ray-core/proxy/vmess/outbound"
 )
 
 type VMessAccount struct {

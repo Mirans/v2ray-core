@@ -9,13 +9,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	http_proto "github.com/v2ray/v2ray-core/core/common/protocol/http"
-	"github.com/v2ray/v2ray-core/core/common/session"
-	"github.com/v2ray/v2ray-core/core/external/github.com/gorilla/websocket"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
-	v2tls "github.com/v2ray/v2ray-core/core/transport/internet/tls"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/net"
+	http_proto "github.com/v2ray/v2ray-core/common/protocol/http"
+	"github.com/v2ray/v2ray-core/common/session"
+	"github.com/v2ray/v2ray-core/external/github.com/gorilla/websocket"
+	"github.com/v2ray/v2ray-core/transport/internet"
+	v2tls "github.com/v2ray/v2ray-core/transport/internet/tls"
 )
 
 type requestHandler struct {

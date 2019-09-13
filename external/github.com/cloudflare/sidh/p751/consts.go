@@ -1,8 +1,8 @@
 package p751
 
 import (
-	. "github.com/v2ray/v2ray-core/core/external/github.com/cloudflare/sidh/internal/isogeny"
-	cpu "github.com/v2ray/v2ray-core/core/external/github.com/cloudflare/sidh/internal/utils"
+	. "github.com/v2ray/v2ray-core/external/github.com/cloudflare/sidh/internal/isogeny"
+	cpu "github.com/v2ray/v2ray-core/external/github.com/cloudflare/sidh/internal/utils"
 )
 
 const (

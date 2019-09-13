@@ -4,17 +4,17 @@ import (
 	"context"
 	"io"
 
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/log"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	"github.com/v2ray/v2ray-core/core/common/session"
-	"github.com/v2ray/v2ray-core/core/features/routing"
-	"github.com/v2ray/v2ray-core/core/transport"
-	"github.com/v2ray/v2ray-core/core/transport/pipe"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/log"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	"github.com/v2ray/v2ray-core/common/session"
+	"github.com/v2ray/v2ray-core/features/routing"
+	"github.com/v2ray/v2ray-core/transport"
+	"github.com/v2ray/v2ray-core/transport/pipe"
 )
 
 type Server struct {

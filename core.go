@@ -9,11 +9,11 @@
 // connections.
 package core
 
-//go:generate go install "github.com/v2ray/v2ray-core/core/common/errors/errorgen"
+//go:generate go install "github.com/v2ray/v2ray-core/common/errors/errorgen"
 //go:generate errorgen
 
 import (
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 const (

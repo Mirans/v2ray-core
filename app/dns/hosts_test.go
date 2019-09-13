@@ -5,9 +5,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/v2ray/v2ray-core/core/app/dns"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/net"
+	. "github.com/v2ray/v2ray-core/app/dns"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 func TestStaticHosts(t *testing.T) {

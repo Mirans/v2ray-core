@@ -3,8 +3,8 @@ package quic
 import (
 	"fmt"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/utils"
 )
 
 type serverSession struct {

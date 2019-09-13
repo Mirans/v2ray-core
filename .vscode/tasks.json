@@ -11,7 +11,7 @@
   "tasks": [
     {
       "label": "build",
-      "args": ["github.com/v2ray/v2ray-core/core/..."],
+      "args": ["github.com/v2ray/v2ray-core/..."],
       "group": "build",
       "problemMatcher": {
         "owner": "go",
@@ -26,7 +26,7 @@
     },
     {
       "label": "test",
-      "args": ["-p", "1", "github.com/v2ray/v2ray-core/core/..."],
+      "args": ["-p", "1", "github.com/v2ray/v2ray-core/..."],
       "group": "test"
     },
     {

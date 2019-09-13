@@ -11,9 +11,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
 
-	logService "github.com/v2ray/v2ray-core/core/app/log/command"
-	statsService "github.com/v2ray/v2ray-core/core/app/stats/command"
-	"github.com/v2ray/v2ray-core/core/common"
+	logService "github.com/v2ray/v2ray-core/app/log/command"
+	statsService "github.com/v2ray/v2ray-core/app/stats/command"
+	"github.com/v2ray/v2ray-core/common"
 )
 
 type ApiCommand struct{}

@@ -3,11 +3,11 @@ package conf
 import (
 	"strings"
 
-	"github.com/v2ray/v2ray-core/core/app/commander"
-	loggerservice "github.com/v2ray/v2ray-core/core/app/log/command"
-	handlerservice "github.com/v2ray/v2ray-core/core/app/proxyman/command"
-	statsservice "github.com/v2ray/v2ray-core/core/app/stats/command"
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/app/commander"
+	loggerservice "github.com/v2ray/v2ray-core/app/log/command"
+	handlerservice "github.com/v2ray/v2ray-core/app/proxyman/command"
+	statsservice "github.com/v2ray/v2ray-core/app/stats/command"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 type ApiConfig struct {

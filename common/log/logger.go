@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common/platform"
-	"github.com/v2ray/v2ray-core/core/common/signal/done"
-	"github.com/v2ray/v2ray-core/core/common/signal/semaphore"
+	"github.com/v2ray/v2ray-core/common/platform"
+	"github.com/v2ray/v2ray-core/common/signal/done"
+	"github.com/v2ray/v2ray-core/common/signal/semaphore"
 )
 
 // Writer is the interface for writing logs.

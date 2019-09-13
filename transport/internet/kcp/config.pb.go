@@ -3,7 +3,7 @@ package kcp
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	serial "github.com/v2ray/v2ray-core/core/common/serial"
+	serial "github.com/v2ray/v2ray-core/common/serial"
 	math "math"
 )
 
@@ -404,7 +404,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/kcp/config.proto", fileDescriptor_3746d5d763e81577)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/transport/internet/kcp/config.proto", fileDescriptor_3746d5d763e81577)
 }
 
 var fileDescriptor_3746d5d763e81577 = []byte{

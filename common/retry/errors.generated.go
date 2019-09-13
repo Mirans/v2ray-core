@@ -1,6 +1,6 @@
 package retry
 
-import "github.com/v2ray/v2ray-core/core/common/errors"
+import "github.com/v2ray/v2ray-core/common/errors"
 
 type errPathObjHolder struct{}
 

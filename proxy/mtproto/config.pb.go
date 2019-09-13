@@ -3,7 +3,7 @@ package mtproto
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
 	math "math"
 )
 
@@ -136,7 +136,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/mtproto/config.proto", fileDescriptor_64514e21c693811b)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/proxy/mtproto/config.proto", fileDescriptor_64514e21c693811b)
 }
 
 var fileDescriptor_64514e21c693811b = []byte{

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/v2ray/v2ray-core/core/app/dns"
-	"github.com/v2ray/v2ray-core/core/common"
+	. "github.com/v2ray/v2ray-core/app/dns"
+	"github.com/v2ray/v2ray-core/common"
 )
 
 func TestLocalNameServer(t *testing.T) {

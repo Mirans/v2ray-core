@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2ray/v2ray-core/core/common/dice"
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common/dice"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 type ValidationStrategy interface {

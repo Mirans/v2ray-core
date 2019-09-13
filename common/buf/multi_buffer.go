@@ -3,9 +3,9 @@ package buf
 import (
 	"io"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 // ReadAllToBytes reads all content from the reader into a byte array, until EOF.

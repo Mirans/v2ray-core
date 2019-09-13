@@ -3,8 +3,8 @@
 package tcp
 
 import (
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/transport/internet"
 )
 
 const protocolName = "tcp"

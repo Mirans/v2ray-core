@@ -3,8 +3,8 @@ package core
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	serial "github.com/v2ray/v2ray-core/core/common/serial"
-	transport "github.com/v2ray/v2ray-core/core/transport"
+	serial "github.com/v2ray/v2ray-core/common/serial"
+	transport "github.com/v2ray/v2ray-core/transport"
 	math "math"
 )
 
@@ -243,7 +243,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/config.proto", fileDescriptor_13704400b1045c6b)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/config.proto", fileDescriptor_13704400b1045c6b)
 }
 
 var fileDescriptor_13704400b1045c6b = []byte{

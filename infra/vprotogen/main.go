@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/common"
 )
 
 var protocMap = map[string]string{
@@ -21,7 +21,7 @@ var protocMap = map[string]string{
 }
 
 var (
-	repo = flag.String("repo", "", "Repo for protobuf generation, such as github.com/v2ray/v2ray-core/core")
+	repo = flag.String("repo", "", "Repo for protobuf generation, such as github.com/v2ray/v2ray-core")
 )
 
 func main() {

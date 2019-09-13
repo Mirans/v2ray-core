@@ -3,7 +3,7 @@ package freedom
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
 	math "math"
 )
 
@@ -159,7 +159,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/freedom/config.proto", fileDescriptor_66807b6fe2cca4da)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/proxy/freedom/config.proto", fileDescriptor_66807b6fe2cca4da)
 }
 
 var fileDescriptor_66807b6fe2cca4da = []byte{

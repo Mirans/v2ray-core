@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/qerr"
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/qerr"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/utils"
 )
 
 // A ConnectionCloseFrame is a CONNECTION_CLOSE frame

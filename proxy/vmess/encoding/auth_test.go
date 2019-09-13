@@ -6,8 +6,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	. "github.com/v2ray/v2ray-core/core/proxy/vmess/encoding"
+	"github.com/v2ray/v2ray-core/common"
+	. "github.com/v2ray/v2ray-core/proxy/vmess/encoding"
 )
 
 func TestFnvAuth(t *testing.T) {

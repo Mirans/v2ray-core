@@ -3,7 +3,7 @@ package http_test
 import (
 	"testing"
 
-	. "github.com/v2ray/v2ray-core/core/common/protocol/http"
+	. "github.com/v2ray/v2ray-core/common/protocol/http"
 )
 
 func TestHTTPHeaders(t *testing.T) {

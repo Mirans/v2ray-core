@@ -6,8 +6,8 @@ option go_package = "net";
 option java_package = "com.v2ray.core.common.net";
 option java_multiple_files = true;
 
-import "github.com/v2ray/v2ray-core/core/common/net/network.proto";
-import "github.com/v2ray/v2ray-core/core/common/net/address.proto";
+import "github.com/v2ray/v2ray-core/common/net/network.proto";
+import "github.com/v2ray/v2ray-core/common/net/address.proto";
 
 // Endpoint of a network connection.
 message Endpoint {

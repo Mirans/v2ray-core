@@ -12,16 +12,16 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/app/proxyman"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/serial"
-	"github.com/v2ray/v2ray-core/core/proxy/freedom"
-	v2http "github.com/v2ray/v2ray-core/core/proxy/http"
-	v2httptest "github.com/v2ray/v2ray-core/core/testing/servers/http"
-	"github.com/v2ray/v2ray-core/core/testing/servers/tcp"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/app/proxyman"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/serial"
+	"github.com/v2ray/v2ray-core/proxy/freedom"
+	v2http "github.com/v2ray/v2ray-core/proxy/http"
+	v2httptest "github.com/v2ray/v2ray-core/testing/servers/http"
+	"github.com/v2ray/v2ray-core/testing/servers/tcp"
 )
 
 func TestHttpConformance(t *testing.T) {

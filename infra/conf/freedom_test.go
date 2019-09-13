@@ -3,10 +3,10 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	. "github.com/v2ray/v2ray-core/core/infra/conf"
-	"github.com/v2ray/v2ray-core/core/proxy/freedom"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	. "github.com/v2ray/v2ray-core/infra/conf"
+	"github.com/v2ray/v2ray-core/proxy/freedom"
 )
 
 func TestFreedomConfig(t *testing.T) {

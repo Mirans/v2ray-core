@@ -1,9 +1,9 @@
-package log // import "github.com/v2ray/v2ray-core/core/common/log"
+package log // import "github.com/v2ray/v2ray-core/common/log"
 
 import (
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common/serial"
 )
 
 // Message is the interface for all log messages.

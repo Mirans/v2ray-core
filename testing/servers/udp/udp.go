@@ -3,7 +3,7 @@ package udp
 import (
 	"fmt"
 
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 type Server struct {

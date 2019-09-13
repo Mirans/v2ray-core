@@ -3,8 +3,8 @@ package quic
 import (
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/external/github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/v2ray/v2ray-core/core/common/bytespool"
+	"github.com/v2ray/v2ray-core/external/github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/v2ray/v2ray-core/common/bytespool"
 )
 
 type packetBuffer struct {

@@ -10,17 +10,17 @@ import (
 	"time"
 
 	"golang.org/x/net/dns/dnsmessage"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/errors"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/common/protocol/dns"
-	udp_proto "github.com/v2ray/v2ray-core/core/common/protocol/udp"
-	"github.com/v2ray/v2ray-core/core/common/session"
-	"github.com/v2ray/v2ray-core/core/common/signal/pubsub"
-	"github.com/v2ray/v2ray-core/core/common/task"
-	dns_feature "github.com/v2ray/v2ray-core/core/features/dns"
-	"github.com/v2ray/v2ray-core/core/features/routing"
-	"github.com/v2ray/v2ray-core/core/transport/internet/udp"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/errors"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/common/protocol/dns"
+	udp_proto "github.com/v2ray/v2ray-core/common/protocol/udp"
+	"github.com/v2ray/v2ray-core/common/session"
+	"github.com/v2ray/v2ray-core/common/signal/pubsub"
+	"github.com/v2ray/v2ray-core/common/task"
+	dns_feature "github.com/v2ray/v2ray-core/features/dns"
+	"github.com/v2ray/v2ray-core/features/routing"
+	"github.com/v2ray/v2ray-core/transport/internet/udp"
 )
 
 type record struct {

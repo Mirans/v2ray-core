@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"sync"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/buf"
-	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/buf"
+	"github.com/v2ray/v2ray-core/common/serial"
 	"golang.org/x/net/dns/dnsmessage"
 )
 

@@ -6,10 +6,10 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/net"
-	"github.com/v2ray/v2ray-core/core/features/routing"
-	"github.com/v2ray/v2ray-core/core/transport/internet/udp"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/net"
+	"github.com/v2ray/v2ray-core/features/routing"
+	"github.com/v2ray/v2ray-core/transport/internet/udp"
 )
 
 // CreateObject creates a new object based on the given V2Ray instance and config. The V2Ray instance may be nil.

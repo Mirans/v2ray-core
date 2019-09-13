@@ -7,9 +7,9 @@ import (
 	"crypto/cipher"
 	"crypto/sha256"
 
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/protocol"
-	"github.com/v2ray/v2ray-core/core/transport/internet"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/protocol"
+	"github.com/v2ray/v2ray-core/transport/internet"
 	"golang.org/x/crypto/chacha20poly1305"
 )
 

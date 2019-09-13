@@ -5,7 +5,7 @@ package udp
 import (
 	"syscall"
 
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 func RetrieveOriginalDest(oob []byte) net.Destination {

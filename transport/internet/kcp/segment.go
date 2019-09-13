@@ -5,7 +5,7 @@ package kcp
 import (
 	"encoding/binary"
 
-	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/common/buf"
 )
 
 // Command is a KCP command that indicate the purpose of a Segment.

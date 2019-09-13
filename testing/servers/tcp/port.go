@@ -1,8 +1,8 @@
 package tcp
 
 import (
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/common/net"
 )
 
 // PickPort returns an unused TCP port in the system. The port returned is highly likely to be unused, but not guaranteed.

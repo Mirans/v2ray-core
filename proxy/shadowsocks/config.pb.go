@@ -3,8 +3,8 @@ package shadowsocks
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	net "github.com/v2ray/v2ray-core/core/common/net"
-	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	net "github.com/v2ray/v2ray-core/common/net"
+	protocol "github.com/v2ray/v2ray-core/common/protocol"
 	math "math"
 )
 
@@ -254,7 +254,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/shadowsocks/config.proto", fileDescriptor_8d089a30c2106007)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/proxy/shadowsocks/config.proto", fileDescriptor_8d089a30c2106007)
 }
 
 var fileDescriptor_8d089a30c2106007 = []byte{

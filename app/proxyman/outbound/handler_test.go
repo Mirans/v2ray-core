@@ -3,8 +3,8 @@ package outbound_test
 import (
 	"testing"
 
-	. "github.com/v2ray/v2ray-core/core/app/proxyman/outbound"
-	"github.com/v2ray/v2ray-core/core/features/outbound"
+	. "github.com/v2ray/v2ray-core/app/proxyman/outbound"
+	"github.com/v2ray/v2ray-core/features/outbound"
 )
 
 func TestInterfaces(t *testing.T) {

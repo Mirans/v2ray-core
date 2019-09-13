@@ -1,6 +1,6 @@
 package transport
 
-import "github.com/v2ray/v2ray-core/core/common/buf"
+import "github.com/v2ray/v2ray-core/common/buf"
 
 // Link is a utility for connecting between an inbound and an outbound proxy handler.
 type Link struct {

@@ -1,9 +1,9 @@
 package jsonem
 
 import (
-	"github.com/v2ray/v2ray-core/core"
-	"github.com/v2ray/v2ray-core/core/common"
-	"github.com/v2ray/v2ray-core/core/infra/conf/serial"
+	"github.com/v2ray/v2ray-core"
+	"github.com/v2ray/v2ray-core/common"
+	"github.com/v2ray/v2ray-core/infra/conf/serial"
 )
 
 func init() {

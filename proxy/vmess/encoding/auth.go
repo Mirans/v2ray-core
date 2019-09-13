@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"hash/fnv"
 
-	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/common"
 
 	"golang.org/x/crypto/sha3"
 )
