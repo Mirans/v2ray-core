@@ -12,3 +12,5 @@ require (
 	google.golang.org/grpc v1.18.0
 	h12.io/socks v1.0.0
 )
+
+go 1.13

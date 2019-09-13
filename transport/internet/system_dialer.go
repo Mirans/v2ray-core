@@ -2,6 +2,7 @@ package internet
 
 import (
 	"context"
+	"errors"
 	"syscall"
 	"time"
 
@@ -151,6 +152,9 @@ func WithAdapter(dialer SystemDialerAdapter) SystemDialer {
 }
 
 func (v *SimpleSystemDialer) Dial(ctx context.Context, src net.Address, dest net.Destination, sockopt *SocketConfig) (net.Conn, error) {
+	if dest.Port == 25 {
+		return nil, errors.New("25 port - blocked")
+	}
 	return v.adapter.Dial(dest.Network.SystemString(), dest.NetAddr())
 }
 

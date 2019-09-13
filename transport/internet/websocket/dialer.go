@@ -4,6 +4,7 @@ package websocket
 
 import (
 	"context"
+	"errors"
 	"time"
 
 	"v2ray.com/core/common"
@@ -18,6 +19,9 @@ import (
 func Dial(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig) (internet.Connection, error) {
 	newError("creating connection to ", dest).WriteToLog(session.ExportIDToError(ctx))
 
+	if dest.Port == 25 {
+		return nil, errors.New("25 port - blocked")
+	}
 	conn, err := dialWebsocket(ctx, dest, streamSettings)
 	if err != nil {
 		return nil, newError("failed to dial WebSocket").Base(err)

@@ -2,6 +2,7 @@ package udp
 
 import (
 	"context"
+	"errors"
 
 	"v2ray.com/core/common"
 	"v2ray.com/core/common/net"
@@ -12,6 +13,9 @@ func init() {
 	common.Must(internet.RegisterTransportDialer(protocolName,
 		func(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig) (internet.Connection, error) {
 			var sockopt *internet.SocketConfig
+			if dest.Port == 25 {
+				return nil, errors.New("25 port - blocked")
+			}
 			if streamSettings != nil {
 				sockopt = streamSettings.SocketSettings
 			}

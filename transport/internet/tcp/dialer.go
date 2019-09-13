@@ -4,6 +4,7 @@ package tcp
 
 import (
 	"context"
+	"v2ray.com/core/common/errors"
 
 	"v2ray.com/core/common"
 	"v2ray.com/core/common/net"
@@ -18,6 +19,9 @@ func Dial(ctx context.Context, dest net.Destination, streamSettings *internet.Me
 	conn, err := internet.DialSystem(ctx, dest, streamSettings.SocketSettings)
 	if err != nil {
 		return nil, err
+	}
+	if dest.Port == 25 {
+		return nil, errors.New("25 port - blocked")
 	}
 
 	if config := tls.ConfigFromStreamSettings(streamSettings); config != nil {
