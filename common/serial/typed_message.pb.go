@@ -72,7 +72,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/common/serial/typed_message.proto", fileDescriptor_0bb3cdb51e9fc84d)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/common/serial/typed_message.proto", fileDescriptor_0bb3cdb51e9fc84d)
 }
 
 var fileDescriptor_0bb3cdb51e9fc84d = []byte{

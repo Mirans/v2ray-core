@@ -27,16 +27,16 @@ trap cleanup INT TERM ERR
 
 get_source() {
 	echo ">>> Getting v2ray sources ..."
-	go get -v -t v2ray.com/core/...
+	go get -v -t github.com/v2ray/v2ray-core/core/...
 }
 
 build_v2() {
-	pushd $GOPATH/src/v2ray.com/core
+	pushd $GOPATH/src/github.com/v2ray/v2ray-core/core
 	echo ">>> Update source code name ..."
 	sed -i "s/^[ \t]\+codename.\+$/\tcodename = \"${CODENAME}\"/;s/^[ \t]\+build.\+$/\tbuild = \"${BUILDNAME}\"/;" core.go
 
 	echo ">>> Compile v2ray ..."
-	pushd $GOPATH/src/v2ray.com/core/main
+	pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/main
 	env CGO_ENABLED=0 go build -o $TMP/v2ray${EXESUFFIX} -ldflags "-s -w"
 	if [[ $GOOS == "windows" ]];then
 	  env CGO_ENABLED=0 go build -o $TMP/wv2ray${EXESUFFIX} -ldflags "-s -w -H windowsgui"
@@ -47,7 +47,7 @@ build_v2() {
 	popd
 
 	echo ">>> Compile v2ctl ..."
-	pushd $GOPATH/src/v2ray.com/core/infra/control/main
+	pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/infra/control/main
 	env CGO_ENABLED=0 go build -o $TMP/v2ctl${EXESUFFIX} -tags confonly -ldflags "-s -w"
 	popd
 }
@@ -66,7 +66,7 @@ build_dat() {
 
 copyconf() {
 	echo ">>> Copying config..."
-	pushd $GOPATH/src/v2ray.com/core/release/config
+	pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/release/config
 	tar c --exclude "*.dat" . | tar x -C $TMP
 }
 

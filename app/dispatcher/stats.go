@@ -3,9 +3,9 @@
 package dispatcher
 
 import (
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/features/stats"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/features/stats"
 )
 
 type SizeStatWriter struct {

@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/transport"
-	"v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/transport"
+	"github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 // Handler is an outbound connection that silently swallow the entire payload.

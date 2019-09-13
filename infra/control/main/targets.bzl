@@ -3,7 +3,7 @@ load("//infra/bazel:gpg.bzl", "gpg_sign")
 
 def gen_targets(matrix):
   output = "v2ctl"
-  pkg = "v2ray.com/core/infra/control/main"
+  pkg = "github.com/v2ray/v2ray-core/core/infra/control/main"
 
   for (os, arch) in matrix:
     bin_name = "v2ctl_" + os + "_" + arch

@@ -5,18 +5,18 @@ package shadowsocks
 import (
 	"context"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol"
-	"v2ray.com/core/common/retry"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/common/signal"
-	"v2ray.com/core/common/task"
-	"v2ray.com/core/features/policy"
-	"v2ray.com/core/transport"
-	"v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/protocol"
+	"github.com/v2ray/v2ray-core/core/common/retry"
+	"github.com/v2ray/v2ray-core/core/common/session"
+	"github.com/v2ray/v2ray-core/core/common/signal"
+	"github.com/v2ray/v2ray-core/core/common/task"
+	"github.com/v2ray/v2ray-core/core/features/policy"
+	"github.com/v2ray/v2ray-core/core/transport"
+	"github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 // Client is a inbound handler for Shadowsocks protocol

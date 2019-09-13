@@ -103,7 +103,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/common/net/address.proto", fileDescriptor_4ba9b4a4304e7c1f)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/common/net/address.proto", fileDescriptor_4ba9b4a4304e7c1f)
 }
 
 var fileDescriptor_4ba9b4a4304e7c1f = []byte{

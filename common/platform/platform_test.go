@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"testing"
 
-	"v2ray.com/core/common"
-	. "v2ray.com/core/common/platform"
+	"github.com/v2ray/v2ray-core/core/common"
+	. "github.com/v2ray/v2ray-core/core/common/platform"
 )
 
 func TestNormalizeEnvName(t *testing.T) {

@@ -1,6 +1,6 @@
 package net
 
-import "v2ray.com/core/common/errors"
+import "github.com/v2ray/v2ray-core/core/common/errors"
 
 type errPathObjHolder struct{}
 

@@ -5,10 +5,10 @@ import (
 	"syscall"
 	"testing"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/testing/servers/tcp"
-	. "v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/testing/servers/tcp"
+	. "github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 func TestSockOptMark(t *testing.T) {

@@ -9,15 +9,15 @@ import (
 	"sync"
 	"time"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/common/strmatcher"
-	"v2ray.com/core/common/uuid"
-	"v2ray.com/core/features"
-	"v2ray.com/core/features/dns"
-	"v2ray.com/core/features/routing"
+	"github.com/v2ray/v2ray-core/core"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/session"
+	"github.com/v2ray/v2ray-core/core/common/strmatcher"
+	"github.com/v2ray/v2ray-core/core/common/uuid"
+	"github.com/v2ray/v2ray-core/core/features"
+	"github.com/v2ray/v2ray-core/core/features/dns"
+	"github.com/v2ray/v2ray-core/core/features/routing"
 )
 
 // Server is a DNS rely server.

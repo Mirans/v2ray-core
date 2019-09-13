@@ -6,8 +6,8 @@ option go_package = "router";
 option java_package = "com.v2ray.core.app.router";
 option java_multiple_files = true;
 
-import "v2ray.com/core/common/net/port.proto";
-import "v2ray.com/core/common/net/network.proto";
+import "github.com/v2ray/v2ray-core/core/common/net/port.proto";
+import "github.com/v2ray/v2ray-core/core/common/net/network.proto";
 
 // Domain for routing decision. 
 message Domain {

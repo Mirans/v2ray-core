@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol/tls/cert"
-	"v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/protocol/tls/cert"
+	"github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 var (

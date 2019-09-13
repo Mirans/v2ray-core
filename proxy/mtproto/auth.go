@@ -7,7 +7,7 @@ import (
 	"io"
 	"sync"
 
-	"v2ray.com/core/common"
+	"github.com/v2ray/v2ray-core/core/common"
 )
 
 const (

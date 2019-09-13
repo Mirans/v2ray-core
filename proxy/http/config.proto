@@ -6,7 +6,7 @@ option go_package = "http";
 option java_package = "com.v2ray.core.proxy.http";
 option java_multiple_files = true;
 
-import "v2ray.com/core/common/protocol/server_spec.proto";
+import "github.com/v2ray/v2ray-core/core/common/protocol/server_spec.proto";
 
 message Account {
   string username = 1;

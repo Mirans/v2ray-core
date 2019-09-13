@@ -2,7 +2,7 @@
 
 V2Ray 内核可以单独使用，也可以配置其它程序一起使用。
 
-官网：https://www.v2ray.com/
+官网：https://www.github.com/v2ray/v2ray-core/
 
 ## 使用方式
 

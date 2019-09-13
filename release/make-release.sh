@@ -24,7 +24,7 @@ MINOR=${PARTS[1]}
 MINOR=$((MINOR+1))
 VERN=${MAJOR}.${MINOR}
 
-pushd $GOPATH/src/v2ray.com/core
+pushd $GOPATH/src/github.com/v2ray/v2ray-core/core
 echo "Adding a new tag: " "v$VER"
 git tag -s -a "v$VER" -m "Version ${VER}"
 sed -i '' "s/\(version *= *\"\).*\(\"\)/\1$VERN\2/g" core.go

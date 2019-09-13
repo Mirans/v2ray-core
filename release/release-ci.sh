@@ -46,10 +46,10 @@ mkdir -p /v2/src
 export GOPATH=/v2
 
 # Download all source code
-go get -t v2ray.com/core/...
-go get -t v2ray.com/ext/...
+go get -t github.com/v2ray/v2ray-core/core/...
+go get -t github.com/v2ray/v2ray-core/ext/...
 
-pushd $GOPATH/src/v2ray.com/core/
+pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/
 git checkout tags/${RELEASE_TAG}
 
 VERN=${RELEASE_TAG:1}
@@ -58,7 +58,7 @@ sed -i "s/\(version *= *\"\).*\(\"\)/\1$VERN\2/g" core.go
 sed -i "s/\(build *= *\"\).*\(\"\)/\1$BUILDN\2/g" core.go
 popd
 
-pushd $GOPATH/src/v2ray.com/core/
+pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/
 # Update geoip.dat
 GEOIP_TAG=$(curl --silent "https://api.github.com/repos/v2ray/geoip/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 curl -L -o release/config/geoip.dat "https://github.com/v2ray/geoip/releases/download/${GEOIP_TAG}/geoip.dat"
@@ -77,11 +77,11 @@ pushd $GOPATH/src
 zip -9 -r /v2/build/src_all.zip * -x '*.git*'
 popd
 
-pushd $GOPATH/src/v2ray.com/core/
+pushd $GOPATH/src/github.com/v2ray/v2ray-core/core/
 bazel build --action_env=GOPATH=$GOPATH --action_env=PATH=$PATH --action_env=GPG_PASS=${SIGN_KEY_PASS} //release:all
 popd
 
-RELBODY="https://www.v2ray.com/chapter_00/01_versions.html"
+RELBODY="https://www.github.com/v2ray/v2ray-core/chapter_00/01_versions.html"
 JSON_DATA=$(echo "{}" | jq -c ".tag_name=\"${RELEASE_TAG}\"")
 JSON_DATA=$(echo ${JSON_DATA} | jq -c ".prerelease=${PRERELEASE}")
 JSON_DATA=$(echo ${JSON_DATA} | jq -c ".body=\"${RELBODY}\"")
@@ -107,7 +107,7 @@ function upload() {
   uploadfile $DGST
 }
 
-ART_ROOT=$GOPATH/src/v2ray.com/core/bazel-bin/release
+ART_ROOT=$GOPATH/src/github.com/v2ray/v2ray-core/core/bazel-bin/release
 
 upload ${ART_ROOT}/v2ray-macos.zip
 upload ${ART_ROOT}/v2ray-windows-64.zip
@@ -145,7 +145,7 @@ echo "Version: ${VERN}"
 
 DOWNLOAD_URL="https://github.com/v2ray/v2ray-core/releases/download/v${VERN}/v2ray-macos.zip"
 
-cd $GOPATH/src/v2ray.com/
+cd $GOPATH/src/github.com/v2ray/v2ray-core/
 git clone https://github.com/v2ray/homebrew-v2ray.git
 
 echo "Updating config"
@@ -159,20 +159,20 @@ sed -i "s#^\s*version.*#  version \"$VERN\"#g" Formula/v2ray-core.rb
 echo "Updating repo"
 
 git config user.name "Darien Raymond"
-git config user.email "admin@v2ray.com"
+git config user.email "admin@github.com/v2ray/v2ray-core"
 
 git commit -am "update to version $VERN"
 git push  --quiet "https://${GITHUB_TOKEN}@github.com/v2ray/homebrew-v2ray" master:master
 
 echo "Updating dist"
 
-cd $GOPATH/src/v2ray.com/
+cd $GOPATH/src/github.com/v2ray/v2ray-core/
 mkdir dist
 cd dist
 
 git init
 git config user.name "Darien Raymond"
-git config user.email "admin@v2ray.com"
+git config user.email "admin@github.com/v2ray/v2ray-core"
 
 cp ${ART_ROOT}/v2ray-macos.zip .
 cp ${ART_ROOT}/v2ray-windows-64.zip .
@@ -194,7 +194,7 @@ cp ${ART_ROOT}/v2ray-openbsd-64.zip .
 cp ${ART_ROOT}/v2ray-openbsd-32.zip .
 cp ${ART_ROOT}/v2ray-dragonfly-64.zip .
 cp /v2/build/src_all.zip .
-cp "$GOPATH/src/v2ray.com/core/release/install-release.sh" ./install.sh
+cp "$GOPATH/src/github.com/v2ray/v2ray-core/core/release/install-release.sh" ./install.sh
 
 sed -i "s/^NEW_VER=\"\"$/NEW_VER=\"${RELEASE_TAG}\"/" install.sh
 sed -i 's/^DIST_SRC=".*"$/DIST_SRC="jsdelivr"/' install.sh

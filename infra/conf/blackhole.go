@@ -5,8 +5,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/proxy/blackhole"
+	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/core/proxy/blackhole"
 )
 
 type NoneResponse struct{}

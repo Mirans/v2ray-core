@@ -3,8 +3,8 @@
 package quic
 
 import (
-	"v2ray.com/core/common"
-	"v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 //go:generate errorgen
@@ -16,7 +16,7 @@ import (
 //
 
 const protocolName = "quic"
-const internalDomain = "quic.internal.v2ray.com"
+const internalDomain = "quic.internal.github.com/v2ray/v2ray-core"
 
 func init() {
 	common.Must(internet.RegisterProtocolConfigCreator(protocolName, func() interface{} {

@@ -3,8 +3,8 @@ package conf
 import (
 	"strings"
 
-	"v2ray.com/core/app/log"
-	clog "v2ray.com/core/common/log"
+	"github.com/v2ray/v2ray-core/core/app/log"
+	clog "github.com/v2ray/v2ray-core/core/common/log"
 )
 
 func DefaultLogConfig() *log.Config {

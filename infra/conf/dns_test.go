@@ -7,13 +7,13 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"v2ray.com/core/app/dns"
-	"v2ray.com/core/app/router"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/platform"
-	"v2ray.com/core/common/platform/filesystem"
-	. "v2ray.com/core/infra/conf"
+	"github.com/v2ray/v2ray-core/core/app/dns"
+	"github.com/v2ray/v2ray-core/core/app/router"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/platform"
+	"github.com/v2ray/v2ray-core/core/common/platform/filesystem"
+	. "github.com/v2ray/v2ray-core/core/infra/conf"
 )
 
 func init() {
@@ -64,10 +64,10 @@ func TestDnsConfigParsing(t *testing.T) {
 				"servers": [{
 					"address": "8.8.8.8",
 					"port": 5353,
-					"domains": ["domain:v2ray.com"]
+					"domains": ["domain:github.com/v2ray/v2ray-core"]
 				}],
 				"hosts": {
-					"v2ray.com": "127.0.0.1",
+					"github.com/v2ray/v2ray-core": "127.0.0.1",
 					"domain:example.com": "google.com",
 					"geosite:test": "10.0.0.1",
 					"keyword:google": "8.8.8.8",
@@ -91,7 +91,7 @@ func TestDnsConfigParsing(t *testing.T) {
 						PrioritizedDomain: []*dns.NameServer_PriorityDomain{
 							{
 								Type:   dns.DomainMatchingType_Subdomain,
-								Domain: "v2ray.com",
+								Domain: "github.com/v2ray/v2ray-core",
 							},
 						},
 					},
@@ -119,7 +119,7 @@ func TestDnsConfigParsing(t *testing.T) {
 					},
 					{
 						Type:   dns.DomainMatchingType_Full,
-						Domain: "v2ray.com",
+						Domain: "github.com/v2ray/v2ray-core",
 						Ip:     [][]byte{{127, 0, 0, 1}},
 					},
 				},

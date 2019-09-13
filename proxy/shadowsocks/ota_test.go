@@ -5,9 +5,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	. "v2ray.com/core/proxy/shadowsocks"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	. "github.com/v2ray/v2ray-core/core/proxy/shadowsocks"
 )
 
 func TestNormalChunkReading(t *testing.T) {

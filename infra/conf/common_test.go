@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"v2ray.com/core/common/protocol"
+	"github.com/v2ray/v2ray-core/core/common/protocol"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	. "v2ray.com/core/infra/conf"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	. "github.com/v2ray/v2ray-core/core/infra/conf"
 )
 
 func TestStringListUnmarshalError(t *testing.T) {
@@ -43,10 +43,10 @@ func TestIPParsing(t *testing.T) {
 }
 
 func TestDomainParsing(t *testing.T) {
-	rawJson := "\"v2ray.com\""
+	rawJson := "\"github.com/v2ray/v2ray-core\""
 	var address Address
 	common.Must(json.Unmarshal([]byte(rawJson), &address))
-	if address.Domain() != "v2ray.com" {
+	if address.Domain() != "github.com/v2ray/v2ray-core" {
 		t.Error("domain: ", address.Domain())
 	}
 }
@@ -188,7 +188,7 @@ func TestUserParsing(t *testing.T) {
 	user := new(User)
 	common.Must(json.Unmarshal([]byte(`{
     "id": "96edb838-6d68-42ef-a933-25f7ac3a9d09",
-    "email": "love@v2ray.com",
+    "email": "love@github.com/v2ray/v2ray-core",
     "level": 1,
     "alterId": 100
   }`), user))
@@ -196,7 +196,7 @@ func TestUserParsing(t *testing.T) {
 	nUser := user.Build()
 	if r := cmp.Diff(nUser, &protocol.User{
 		Level: 1,
-		Email: "love@v2ray.com",
+		Email: "love@github.com/v2ray/v2ray-core",
 	}); r != "" {
 		t.Error(r)
 	}

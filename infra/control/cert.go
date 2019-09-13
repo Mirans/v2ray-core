@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/protocol/tls/cert"
-	"v2ray.com/core/common/task"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/protocol/tls/cert"
+	"github.com/v2ray/v2ray-core/core/common/task"
 )
 
 type stringList []string
@@ -44,7 +44,7 @@ func (c *CertificateCommand) Description() Description {
 	return Description{
 		Short: "Generate TLS certificates.",
 		Usage: []string{
-			"v2ctl cert [--ca] [--domain=v2ray.com] [--expire=240h]",
+			"v2ctl cert [--ca] [--domain=github.com/v2ray/v2ray-core] [--expire=240h]",
 			"Generate new TLS certificate",
 			"--ca The new certificate is a CA certificate",
 			"--domain Common name for the certificate",

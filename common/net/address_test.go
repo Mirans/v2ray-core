@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "v2ray.com/core/common/net"
+	. "github.com/v2ray/v2ray-core/core/common/net"
 )
 
 func TestAddressProperty(t *testing.T) {
@@ -61,11 +61,11 @@ func TestAddressProperty(t *testing.T) {
 			},
 		},
 		{
-			Input: DomainAddress("v2ray.com"),
+			Input: DomainAddress("github.com/v2ray/v2ray-core"),
 			Output: addrProprty{
-				Domain: "v2ray.com",
+				Domain: "github.com/v2ray/v2ray-core",
 				Family: AddressFamilyDomain,
-				String: "v2ray.com",
+				String: "github.com/v2ray/v2ray-core",
 			},
 		},
 		{
@@ -101,11 +101,11 @@ func TestAddressProperty(t *testing.T) {
 			},
 		},
 		{
-			Input: NewIPOrDomain(ParseAddress("v2ray.com")).AsAddress(),
+			Input: NewIPOrDomain(ParseAddress("github.com/v2ray/v2ray-core")).AsAddress(),
 			Output: addrProprty{
-				Domain: "v2ray.com",
+				Domain: "github.com/v2ray/v2ray-core",
 				Family: AddressFamilyDomain,
-				String: "v2ray.com",
+				String: "github.com/v2ray/v2ray-core",
 			},
 		},
 		{
@@ -157,7 +157,7 @@ func TestInvalidAddressConvertion(t *testing.T) {
 	testCases := []func(){
 		func() { ParseAddress("8.8.8.8").Domain() },
 		func() { ParseAddress("2001:4860:0:2001::68").Domain() },
-		func() { ParseAddress("v2ray.com").IP() },
+		func() { ParseAddress("github.com/v2ray/v2ray-core").IP() },
 	}
 	for idx, testCase := range testCases {
 		if !panics(testCase) {
@@ -186,7 +186,7 @@ func BenchmarkParseAddressIPv6(b *testing.B) {
 
 func BenchmarkParseAddressDomain(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		addr := ParseAddress("v2ray.com")
+		addr := ParseAddress("github.com/v2ray/v2ray-core")
 		if addr.Family() != AddressFamilyDomain {
 			panic("not domain")
 		}

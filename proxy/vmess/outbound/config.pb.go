@@ -3,8 +3,8 @@ package outbound
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
 	math "math"
-	protocol "v2ray.com/core/common/protocol"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -62,7 +62,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/proxy/vmess/outbound/config.proto", fileDescriptor_bc22c8b653a4f7ef)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/vmess/outbound/config.proto", fileDescriptor_bc22c8b653a4f7ef)
 }
 
 var fileDescriptor_bc22c8b653a4f7ef = []byte{

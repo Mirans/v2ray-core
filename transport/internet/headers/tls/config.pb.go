@@ -53,7 +53,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/transport/internet/headers/tls/config.proto", fileDescriptor_e55187b75c46dc0d)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/headers/tls/config.proto", fileDescriptor_e55187b75c46dc0d)
 }
 
 var fileDescriptor_e55187b75c46dc0d = []byte{

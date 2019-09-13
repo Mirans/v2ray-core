@@ -2,7 +2,7 @@ load("//infra/bazel:build.bzl", "foreign_go_binary")
 load("//infra/bazel:gpg.bzl", "gpg_sign")
 
 def gen_targets(matrix):
-  pkg = "v2ray.com/core/main"
+  pkg = "github.com/v2ray/v2ray-core/core/main"
   output = "v2ray"
 
   for (os, arch) in matrix:

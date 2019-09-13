@@ -1,6 +1,6 @@
 package features
 
-import "v2ray.com/core/common"
+import "github.com/v2ray/v2ray-core/core/common"
 
 //go:generate errorgen
 

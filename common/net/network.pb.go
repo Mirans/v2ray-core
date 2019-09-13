@@ -94,7 +94,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/common/net/network.proto", fileDescriptor_6a103d5ccb9e785e)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/common/net/network.proto", fileDescriptor_6a103d5ccb9e785e)
 }
 
 var fileDescriptor_6a103d5ccb9e785e = []byte{

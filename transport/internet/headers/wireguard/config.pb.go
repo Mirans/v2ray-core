@@ -53,7 +53,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/transport/internet/headers/wireguard/config.proto", fileDescriptor_a4c21f616af3c531)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/headers/wireguard/config.proto", fileDescriptor_a4c21f616af3c531)
 }
 
 var fileDescriptor_a4c21f616af3c531 = []byte{

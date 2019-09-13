@@ -6,9 +6,9 @@ import (
 	proto "github.com/golang/protobuf/proto"
 	grpc "google.golang.org/grpc"
 	math "math"
-	core "v2ray.com/core"
-	protocol "v2ray.com/core/common/protocol"
-	serial "v2ray.com/core/common/serial"
+	core "github.com/v2ray/v2ray-core/core"
+	protocol "github.com/v2ray/v2ray-core/core/common/protocol"
+	serial "github.com/v2ray/v2ray-core/core/common/serial"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -586,7 +586,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/app/proxyman/command/command.proto", fileDescriptor_e2c30a70a48636a0)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/app/proxyman/command/command.proto", fileDescriptor_e2c30a70a48636a0)
 }
 
 var fileDescriptor_e2c30a70a48636a0 = []byte{
@@ -862,5 +862,5 @@ var _HandlerService_serviceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "v2ray.com/core/app/proxyman/command/command.proto",
+	Metadata: "github.com/v2ray/v2ray-core/core/app/proxyman/command/command.proto",
 }

@@ -99,7 +99,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/common/protocol/headers.proto", fileDescriptor_5931f958a3c1d408)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/common/protocol/headers.proto", fileDescriptor_5931f958a3c1d408)
 }
 
 var fileDescriptor_5931f958a3c1d408 = []byte{

@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"v2ray.com/core/external/github.com/refraction-networking/utls/cpu"
+	"github.com/v2ray/v2ray-core/core/external/github.com/refraction-networking/utls/cpu"
 )
 
 const (

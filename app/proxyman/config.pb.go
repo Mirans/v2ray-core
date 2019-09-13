@@ -3,10 +3,10 @@ package proxyman
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	net "github.com/v2ray/v2ray-core/core/common/net"
+	serial "github.com/v2ray/v2ray-core/core/common/serial"
+	internet "github.com/v2ray/v2ray-core/core/transport/internet"
 	math "math"
-	net "v2ray.com/core/common/net"
-	serial "v2ray.com/core/common/serial"
-	internet "v2ray.com/core/transport/internet"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -609,7 +609,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/app/proxyman/config.proto", fileDescriptor_b07f45dd938bc1b0)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/app/proxyman/config.proto", fileDescriptor_b07f45dd938bc1b0)
 }
 
 var fileDescriptor_b07f45dd938bc1b0 = []byte{

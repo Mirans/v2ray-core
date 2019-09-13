@@ -7,16 +7,16 @@ package reverse
 import (
 	"context"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/errors"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/features/outbound"
-	"v2ray.com/core/features/routing"
+	"github.com/v2ray/v2ray-core/core"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/errors"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/features/outbound"
+	"github.com/v2ray/v2ray-core/core/features/routing"
 )
 
 const (
-	internalDomain = "reverse.internal.v2ray.com"
+	internalDomain = "reverse.internal.github.com/v2ray/v2ray-core"
 )
 
 func isDomain(dest net.Destination, domain string) bool {

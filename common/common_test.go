@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	. "v2ray.com/core/common"
+	. "github.com/v2ray/v2ray-core/core/common"
 )
 
 func TestMust(t *testing.T) {

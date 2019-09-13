@@ -6,25 +6,25 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"v2ray.com/core"
-	"v2ray.com/core/app/log"
-	"v2ray.com/core/app/policy"
-	"v2ray.com/core/app/proxyman"
-	"v2ray.com/core/app/reverse"
-	"v2ray.com/core/app/router"
-	"v2ray.com/core/common"
-	clog "v2ray.com/core/common/log"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol"
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/common/uuid"
-	"v2ray.com/core/proxy/blackhole"
-	"v2ray.com/core/proxy/dokodemo"
-	"v2ray.com/core/proxy/freedom"
-	"v2ray.com/core/proxy/vmess"
-	"v2ray.com/core/proxy/vmess/inbound"
-	"v2ray.com/core/proxy/vmess/outbound"
-	"v2ray.com/core/testing/servers/tcp"
+	"github.com/v2ray/v2ray-core/core"
+	"github.com/v2ray/v2ray-core/core/app/log"
+	"github.com/v2ray/v2ray-core/core/app/policy"
+	"github.com/v2ray/v2ray-core/core/app/proxyman"
+	"github.com/v2ray/v2ray-core/core/app/reverse"
+	"github.com/v2ray/v2ray-core/core/app/router"
+	"github.com/v2ray/v2ray-core/core/common"
+	clog "github.com/v2ray/v2ray-core/core/common/log"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/protocol"
+	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/core/common/uuid"
+	"github.com/v2ray/v2ray-core/core/proxy/blackhole"
+	"github.com/v2ray/v2ray-core/core/proxy/dokodemo"
+	"github.com/v2ray/v2ray-core/core/proxy/freedom"
+	"github.com/v2ray/v2ray-core/core/proxy/vmess"
+	"github.com/v2ray/v2ray-core/core/proxy/vmess/inbound"
+	"github.com/v2ray/v2ray-core/core/proxy/vmess/outbound"
+	"github.com/v2ray/v2ray-core/core/testing/servers/tcp"
 )
 
 func TestReverseProxy(t *testing.T) {
@@ -46,7 +46,7 @@ func TestReverseProxy(t *testing.T) {
 				PortalConfig: []*reverse.PortalConfig{
 					{
 						Tag:    "portal",
-						Domain: "test.v2ray.com",
+						Domain: "test.github.com/v2ray/v2ray-core",
 					},
 				},
 			}),
@@ -54,7 +54,7 @@ func TestReverseProxy(t *testing.T) {
 				Rule: []*router.RoutingRule{
 					{
 						Domain: []*router.Domain{
-							{Type: router.Domain_Full, Value: "test.v2ray.com"},
+							{Type: router.Domain_Full, Value: "test.github.com/v2ray/v2ray-core"},
 						},
 						TargetTag: &router.RoutingRule_Tag{
 							Tag: "portal",
@@ -115,7 +115,7 @@ func TestReverseProxy(t *testing.T) {
 				BridgeConfig: []*reverse.BridgeConfig{
 					{
 						Tag:    "bridge",
-						Domain: "test.v2ray.com",
+						Domain: "test.github.com/v2ray/v2ray-core",
 					},
 				},
 			}),
@@ -123,7 +123,7 @@ func TestReverseProxy(t *testing.T) {
 				Rule: []*router.RoutingRule{
 					{
 						Domain: []*router.Domain{
-							{Type: router.Domain_Full, Value: "test.v2ray.com"},
+							{Type: router.Domain_Full, Value: "test.github.com/v2ray/v2ray-core"},
 						},
 						TargetTag: &router.RoutingRule_Tag{
 							Tag: "reverse",
@@ -231,7 +231,7 @@ func TestReverseProxyLongRunning(t *testing.T) {
 				PortalConfig: []*reverse.PortalConfig{
 					{
 						Tag:    "portal",
-						Domain: "test.v2ray.com",
+						Domain: "test.github.com/v2ray/v2ray-core",
 					},
 				},
 			}),
@@ -239,7 +239,7 @@ func TestReverseProxyLongRunning(t *testing.T) {
 				Rule: []*router.RoutingRule{
 					{
 						Domain: []*router.Domain{
-							{Type: router.Domain_Full, Value: "test.v2ray.com"},
+							{Type: router.Domain_Full, Value: "test.github.com/v2ray/v2ray-core"},
 						},
 						TargetTag: &router.RoutingRule_Tag{
 							Tag: "portal",
@@ -314,7 +314,7 @@ func TestReverseProxyLongRunning(t *testing.T) {
 				BridgeConfig: []*reverse.BridgeConfig{
 					{
 						Tag:    "bridge",
-						Domain: "test.v2ray.com",
+						Domain: "test.github.com/v2ray/v2ray-core",
 					},
 				},
 			}),
@@ -322,7 +322,7 @@ func TestReverseProxyLongRunning(t *testing.T) {
 				Rule: []*router.RoutingRule{
 					{
 						Domain: []*router.Domain{
-							{Type: router.Domain_Full, Value: "test.v2ray.com"},
+							{Type: router.Domain_Full, Value: "test.github.com/v2ray/v2ray-core"},
 						},
 						TargetTag: &router.RoutingRule_Tag{
 							Tag: "reverse",

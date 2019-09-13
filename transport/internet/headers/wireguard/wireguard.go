@@ -3,7 +3,7 @@ package wireguard
 import (
 	"context"
 
-	"v2ray.com/core/common"
+	"github.com/v2ray/v2ray-core/core/common"
 )
 
 type Wireguard struct{}

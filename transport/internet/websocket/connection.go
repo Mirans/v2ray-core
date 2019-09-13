@@ -7,10 +7,10 @@ import (
 	"net"
 	"time"
 
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/errors"
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/external/github.com/gorilla/websocket"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/common/errors"
+	"github.com/v2ray/v2ray-core/core/common/serial"
+	"github.com/v2ray/v2ray-core/core/external/github.com/gorilla/websocket"
 )
 
 var (

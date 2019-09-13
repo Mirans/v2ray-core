@@ -3,8 +3,8 @@ package commander
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	serial "github.com/v2ray/v2ray-core/core/common/serial"
 	math "math"
-	serial "v2ray.com/core/common/serial"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -73,7 +73,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/app/commander/config.proto", fileDescriptor_4af9cfd3f0e2019e)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/app/commander/config.proto", fileDescriptor_4af9cfd3f0e2019e)
 }
 
 var fileDescriptor_4af9cfd3f0e2019e = []byte{

@@ -3,8 +3,8 @@ package blackhole
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	serial "github.com/v2ray/v2ray-core/core/common/serial"
 	math "math"
-	serial "v2ray.com/core/common/serial"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -126,7 +126,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/proxy/blackhole/config.proto", fileDescriptor_8c8b37c8ae1bdfea)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/blackhole/config.proto", fileDescriptor_8c8b37c8ae1bdfea)
 }
 
 var fileDescriptor_8c8b37c8ae1bdfea = []byte{

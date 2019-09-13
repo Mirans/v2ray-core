@@ -4,7 +4,7 @@ import (
 	"crypto/cipher"
 	"io"
 
-	"v2ray.com/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/common/buf"
 )
 
 type CryptionReader struct {

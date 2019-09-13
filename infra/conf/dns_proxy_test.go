@@ -3,9 +3,9 @@ package conf_test
 import (
 	"testing"
 
-	"v2ray.com/core/common/net"
-	. "v2ray.com/core/infra/conf"
-	"v2ray.com/core/proxy/dns"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	. "github.com/v2ray/v2ray-core/core/infra/conf"
+	"github.com/v2ray/v2ray-core/core/proxy/dns"
 )
 
 func TestDnsProxyConfig(t *testing.T) {

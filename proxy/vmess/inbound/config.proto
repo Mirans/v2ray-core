@@ -6,7 +6,7 @@ option go_package = "inbound";
 option java_package = "com.v2ray.core.proxy.vmess.inbound";
 option java_multiple_files = true;
 
-import "v2ray.com/core/common/protocol/user.proto";
+import "github.com/v2ray/v2ray-core/core/common/protocol/user.proto";
 
 message DetourConfig {
   string to = 1;

@@ -3,8 +3,8 @@ package tcp
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	serial "github.com/v2ray/v2ray-core/core/common/serial"
 	math "math"
-	serial "v2ray.com/core/common/serial"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -62,7 +62,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/transport/internet/tcp/config.proto", fileDescriptor_eb6d289fc61edd40)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/tcp/config.proto", fileDescriptor_eb6d289fc61edd40)
 }
 
 var fileDescriptor_eb6d289fc61edd40 = []byte{

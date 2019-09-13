@@ -3,14 +3,14 @@ package mtproto
 import (
 	"context"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/crypto"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/common/task"
-	"v2ray.com/core/transport"
-	"v2ray.com/core/transport/internet"
+	"github.com/v2ray/v2ray-core/core/common"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/common/crypto"
+	"github.com/v2ray/v2ray-core/core/common/net"
+	"github.com/v2ray/v2ray-core/core/common/session"
+	"github.com/v2ray/v2ray-core/core/common/task"
+	"github.com/v2ray/v2ray-core/core/transport"
+	"github.com/v2ray/v2ray-core/core/transport/internet"
 )
 
 type Client struct {

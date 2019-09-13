@@ -3,8 +3,8 @@ package strmatcher_test
 import (
 	"testing"
 
-	"v2ray.com/core/common"
-	. "v2ray.com/core/common/strmatcher"
+	"github.com/v2ray/v2ray-core/core/common"
+	. "github.com/v2ray/v2ray-core/core/common/strmatcher"
 )
 
 func TestMatcher(t *testing.T) {
@@ -15,49 +15,49 @@ func TestMatcher(t *testing.T) {
 		output  bool
 	}{
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Domain,
-			input:   "www.v2ray.com",
+			input:   "www.github.com/v2ray/v2ray-core",
 			output:  true,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Domain,
-			input:   "v2ray.com",
+			input:   "github.com/v2ray/v2ray-core",
 			output:  true,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Domain,
 			input:   "www.v3ray.com",
 			output:  false,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Domain,
 			input:   "2ray.com",
 			output:  false,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Domain,
-			input:   "xv2ray.com",
+			input:   "xgithub.com/v2ray/v2ray-core",
 			output:  false,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Full,
-			input:   "v2ray.com",
+			input:   "github.com/v2ray/v2ray-core",
 			output:  true,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Full,
-			input:   "xv2ray.com",
+			input:   "xgithub.com/v2ray/v2ray-core",
 			output:  false,
 		},
 		{
-			pattern: "v2ray.com",
+			pattern: "github.com/v2ray/v2ray-core",
 			mType:   Regex,
 			input:   "v2rayxcom",
 			output:  true,

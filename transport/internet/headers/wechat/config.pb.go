@@ -53,7 +53,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/transport/internet/headers/wechat/config.proto", fileDescriptor_0ad582a12d5e4846)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/transport/internet/headers/wechat/config.proto", fileDescriptor_0ad582a12d5e4846)
 }
 
 var fileDescriptor_0ad582a12d5e4846 = []byte{

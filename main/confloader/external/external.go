@@ -5,9 +5,9 @@ import (
 	"os"
 	"strings"
 
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/platform/ctlcmd"
-	"v2ray.com/core/main/confloader"
+	"github.com/v2ray/v2ray-core/core/common/buf"
+	"github.com/v2ray/v2ray-core/core/common/platform/ctlcmd"
+	"github.com/v2ray/v2ray-core/core/main/confloader"
 )
 
 //go:generate errorgen

@@ -3,8 +3,8 @@ package dokodemo
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
+	net "github.com/v2ray/v2ray-core/core/common/net"
 	math "math"
-	net "v2ray.com/core/common/net"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -115,7 +115,7 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("v2ray.com/core/proxy/dokodemo/config.proto", fileDescriptor_de04411d7254f312)
+	proto.RegisterFile("github.com/v2ray/v2ray-core/core/proxy/dokodemo/config.proto", fileDescriptor_de04411d7254f312)
 }
 
 var fileDescriptor_de04411d7254f312 = []byte{
