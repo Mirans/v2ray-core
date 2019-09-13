@@ -1,4 +1,4 @@
-module v2ray.com/core
+module github.com/Mirans/v2ray-core
 
 require (
 	github.com/golang/mock v1.2.0
